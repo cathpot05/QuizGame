@@ -1,0 +1,145 @@
+﻿<Window x:Class="QuestionAndAnswer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuestionAndAnswer"
+        mc:Ignorable="d"
+        Title="" Height="300" Width="400" Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <Style x:Key="btnStyle" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="10"></Setter>
+            <Setter Property="FontFamily" Value="Century Gothic"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+        </Style>
+
+        <Style TargetType="{x:Type RadioButton}">
+            <Setter Property="FontSize" Value="10"></Setter>
+            <Setter Property="FontFamily" Value="Century Gothic"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+        </Style>
+
+
+    </Window.Resources>
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="tbRound"  Text="Round" VerticalAlignment="Center" Grid.Column="0"/>
+                <TextBlock x:Name="tbAmount"  Text="Amount" VerticalAlignment="Center" Grid.Column="1" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="tbTimer"  Text="Timer" VerticalAlignment="Center" Grid.Column="2" HorizontalAlignment="Right"/>
+
+            </Grid>
+            <WrapPanel x:Name="pnlQuestion" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock x:Name="tbQuestion">Sample</TextBlock>
+            </WrapPanel>
+        </Grid>
+
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Margin="10 10 10 10" x:Name="radioPanel">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <RadioButton x:Name="r1" GroupName="Choices" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                    <TextBlock x:Name="tb1"  Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"  Visibility="Hidden" Text="0"/>
+                    <RadioButton x:Name="r2" GroupName="Choices" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                    <TextBlock x:Name="tb2"  Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center"  Visibility="Hidden" Text="0"/>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <RadioButton x:Name="r3" GroupName="Choices"  Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                    <TextBlock x:Name="tb3"  Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"  Visibility="Hidden" Text="0"/>
+                    <RadioButton x:Name="r4" GroupName="Choices"  Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                    <TextBlock x:Name="tb4"  Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center"  Visibility="Hidden" Text="0"/>
+                </Grid>
+            </Grid>
+            <Button x:Name="btnSubmit" Content="" Width="80" Height="50" HorizontalAlignment="Center" Click="btnSubmit_Click" Style="{StaticResource btnStyle}" Margin="156,62,156,-14" Grid.RowSpan="2" Panel.ZIndex="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="submit.png"/>
+                </Button.Background>
+            </Button>
+
+        </Grid>
+        <Grid x:Name="controlsPanel" Grid.Row="2" Height="24" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <!--<ColumnDefinition Width="0.5*"/>-->
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
+                <StackPanel.Background>
+                    <ImageBrush/>
+                </StackPanel.Background>
+                <Button x:Name="lifline1" Content="" Margin="0 0 5 0" Click="lifline1_Click" Width="40" Style="{StaticResource btnStyle}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="lifeline1.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="lifeline3" Content="" Width="40" Style="{StaticResource btnStyle}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="call1.png" Stretch="Fill"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="lifeline2" Content="" Margin="0 0 5 0" Click="lifeline2_Click" Style="{StaticResource btnStyle}" Width="40">
+                    <Button.Background>
+                        <ImageBrush ImageSource="switch.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Column="1" HorizontalAlignment="Center" Orientation="Horizontal">
+                <TextBlock x:Name="tbCurrentLabel"  Text="Current Money: " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock x:Name="tbCurrentAmount" Margin="5 0 0 0" Text="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <Button  x:Name="next" Content="Next" Grid.Column="2" HorizontalAlignment="Right" Click="next_Click" Visibility="Hidden"></Button>
+        </Grid>
+
+
+    </Grid>
+</Window>
+
+    

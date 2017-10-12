@@ -1,0 +1,14 @@
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\bin\Debug\QuestionAndAnswer.exe.config
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\bin\Debug\QuestionAndAnswer.exe
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\bin\Debug\QuestionAndAnswer.pdb
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\obj\Debug\QuestionAndAnswer.csprojResolveAssemblyReference.cache
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\obj\Debug\MainWindow.g.cs
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\obj\Debug\App.g.cs
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\obj\Debug\QuestionAndAnswer_MarkupCompile.cache
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\obj\Debug\QuestionAndAnswer_MarkupCompile.lref
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\obj\Debug\MainWindow.baml
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\obj\Debug\QuestionAndAnswer.g.resources
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\obj\Debug\QuestionAndAnswer.Properties.Resources.resources
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\obj\Debug\QuestionAndAnswer.csproj.GenerateResource.Cache
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\obj\Debug\QuestionAndAnswer.exe
+C:\Users\PB7N0062\Documents\Projects_Codes\STUFFS\QuestionAndAnswer\QuestionAndAnswer\obj\Debug\QuestionAndAnswer.pdb

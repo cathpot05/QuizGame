@@ -1,0 +1,30 @@
+Do the following first to run this program properly"
+
+1. Create a database name: Db_QandA
+2. Run the database.sql included on this project to your MSSQLServer
+3. Open the solution of this project and go to SqlConnect.cs
+4. On Line 20, Change the DataSource to the server name of your database
+	Note:You can see the name when connecting the SQL Server Management Studio
+5. Happy Answering! :)
+
+Note:
+Database Descriptions:
+
+tblQuestions - Basically eto yung list  ng questions nyo. Notice the id column? Auto incremet po yan. System Generated.
+		Yung Level id na column, check  nyo sa tblLevel kng anu yung katumbas ng bawat number n yun
+
+tblAnswers - eto yung list ng choices for specific question.
+		Notice the questionid na column? connected yan sa id na column ng tblQuestions.
+		Meaning to say kapag nag add kayo ng choices make sure na nakaindicate kng kninong question id yun.
+		Yung isCorrect na column, 0 kapag ndi yun yung tama n sgot, 1 kpag yun yung tama.
+		Wag nyo ng baguhin yun kasi yun n din ang nakacodes s program, maguglo kpag naglagy ng iba pang value.
+
+tblLevel - level ng questions. Kung Easy, Medium, Hard at Jackpoy Questions
+
+Wala pang function yung lifeline na call a friend. Kayo na po maglagay.:)
+
+for other questions, feel free to chat me.
+Much better kung email bawal kasi fon s office hahaha.
+-catherine.olaguir@gmail.com
+Thanks!
+
